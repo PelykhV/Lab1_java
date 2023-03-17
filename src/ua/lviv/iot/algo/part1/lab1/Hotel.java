@@ -18,7 +18,7 @@ public class Hotel {
         }
     }
     public void releaseRoom(){
-        if(availableRooms > 0){
+        if(availableRooms < totalRooms){
             availableRooms++;
         }
     }
@@ -39,17 +39,14 @@ public class Hotel {
     }
 
     public static void main(String[] args) {
-        Hotel[] hotels = {new Hotel(),
-                new Hotel("Lviv", 370, 165, 4.1),
-                getInstance(),
-                getInstance()
-        };
+        Hotel[] hotels = new Hotel[4];
+        hotels[0] = new Hotel();
+        hotels[1] = new Hotel("Lviv", 370, 165, 4.1);
+        hotels[2] = Hotel.getInstance();
+        hotels[3] = Hotel.getInstance();
 
-        int i = 0;
-        while(i< hotels.length){
-            System.out.println(hotels[i]);
-            i++;
+        for(Hotel hotel : hotels){
+            System.out.println(hotel);
         }
-
     }
 }
