@@ -1,4 +1,4 @@
-package ua.lviv.iot.algo.part1.lab2;
+package ua.lviv.iot.algo.part1.lab1;
 
 public class SpaHotel extends Hotel{
     public int fitnessRooms;
