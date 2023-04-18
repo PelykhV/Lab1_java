@@ -1,4 +1,4 @@
-package ua.lviv.iot.algo.part1.lab1;
+package ua.lviv.iot.algo.part1;
 
 import lombok.ToString;
 
@@ -22,4 +22,3 @@ public class ResortHotel extends Hotel{
         return complexName;
     }
 }
-

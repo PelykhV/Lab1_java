@@ -1,4 +1,4 @@
-package ua.lviv.iot.algo.part1.lab1;
+package ua.lviv.iot.algo.part1;
 
 import lombok.ToString;
 
@@ -10,7 +10,7 @@ public class Motel extends Hotel{
     private String cityTo;
 
     public Motel(String name, int totalRooms, int availableRooms, double rating, int trackNumber, int trackKilometer,
-                  String cityFrom, String cityTo){
+                 String cityFrom, String cityTo){
         super(name,totalRooms,availableRooms,rating);
         this.trackNumber=trackNumber;
         this.trackKilometer=trackKilometer;

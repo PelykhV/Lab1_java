@@ -1,5 +1,8 @@
-package ua.lviv.iot.algo.part1.lab1;
+package ua.lviv.iot.algo.part1;
 
+import lombok.ToString;
+
+@ToString
 public class BusinessHotel extends Hotel{
     private int offices;
     private String companyOwner;

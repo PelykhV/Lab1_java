@@ -1,6 +1,7 @@
-package ua.lviv.iot.algo.part1.lab1;
+package ua.lviv.iot.algo.part1;
 
 import lombok.*;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -20,6 +21,9 @@ public abstract class Hotel {
         if(availableRooms < totalRooms){
             availableRooms++;
         }
+    }
+    public double getOccupancyRate() {
+        return (double)getAvailableRooms() / getTotalRooms();
     }
     public int getAvailableRooms(){
         return availableRooms;
