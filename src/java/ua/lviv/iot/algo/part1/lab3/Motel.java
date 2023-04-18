@@ -4,6 +4,7 @@ import lombok.ToString;
 
 @ToString
 public class Motel extends Hotel{
+    public static final String HEADERS = "trackNumber, trackKilometer, cityFrom, cityTo";
     private int trackNumber;
     private int trackKilometer;
     private String cityFrom;
@@ -16,9 +17,17 @@ public class Motel extends Hotel{
         this.trackKilometer=trackKilometer;
         this.cityFrom=cityFrom;
         this.cityTo=cityTo;
+        type = "Motel";
     }
     @Override
     public String getLocation() {
         return cityFrom + "-" +cityTo + ", " + trackKilometer + "км";
+    }
+    public String getHeaders() {
+        return super.getHeaders() + "," + HEADERS;
+    }
+
+    public String toCsv() {
+        return super.toCsv() + "," + trackNumber + "," + trackKilometer + "," + cityFrom + "," + cityTo;
     }
 }
