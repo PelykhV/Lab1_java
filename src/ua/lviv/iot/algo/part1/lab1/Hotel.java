@@ -1,11 +1,17 @@
 package ua.lviv.iot.algo.part1.lab1;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+
 public class Hotel {
     private String name;
     private int totalRooms;
