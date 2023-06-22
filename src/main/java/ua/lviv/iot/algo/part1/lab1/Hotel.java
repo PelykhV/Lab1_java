@@ -7,6 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 public abstract class Hotel {
+    private int roomNumber;
     private String name;
     private int totalRooms;
     private int availableRooms;
