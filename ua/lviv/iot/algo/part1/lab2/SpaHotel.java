@@ -1,5 +1,8 @@
 package ua.lviv.iot.algo.part1.lab1;
 
+import lombok.ToString;
+
+@ToString(callSuper = true)
 public class SpaHotel extends Hotel{
     public int fitnessRooms;
     public String complexName;
