@@ -2,7 +2,7 @@ package ua.lviv.iot.algo.part1.lab1;
 
 import lombok.ToString;
 
-@ToString
+@ToString(callSuper = true)
 public class ResortHotel extends Hotel{
     private String complexName;
     private int restaurantQuantity;
@@ -22,4 +22,3 @@ public class ResortHotel extends Hotel{
         return complexName;
     }
 }
-
