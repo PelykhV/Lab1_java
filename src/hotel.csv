@@ -1,0 +1,8 @@
+name, totalRooms, availableRooms, rating,offices, companyOwner
+Light,311,19,4.7,30,Samsung
+name, totalRooms, availableRooms, rating,trackNumber, trackKilometer, cityFrom, cityTo
+Pump,444,111,5.0,411,114,Katowice,Lodz
+name, totalRooms, availableRooms, rating,complexName, restaurantQuantity, childrenPools, adultPools
+Monte Carlo,465,35,4.6,Paperoni,3,4,6
+name, totalRooms, availableRooms, rating,fitnessRooms, complexName
+Rainbow,70,56,4.8,5,Winter
